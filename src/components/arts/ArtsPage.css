@@ -1,0 +1,158 @@
+.arts-section .portfolio-section__body {
+  min-width: 0;
+}
+
+.arts-section h2 {
+  white-space: pre-line;
+}
+
+.arts-copy {
+  margin: 0 0 30px;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+.arts-photo {
+  min-width: 0;
+  margin: 0;
+}
+
+.arts-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.arts-concert-collage,
+.arts-exhibition-row,
+.arts-exhibition-collage {
+  width: 89.25%;
+  max-width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.arts-concert-collage__top {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.arts-concert-collage__bottom {
+  display: grid;
+  grid-template-columns: minmax(0, 389fr) minmax(0, 583fr);
+  align-items: start;
+  gap: 11px;
+}
+
+.arts-art-space-title {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto 30px;
+  padding: 10px 25px;
+  color: inherit;
+  background: #e7e66c;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.arts-exhibition-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.arts-copy--impact {
+  margin-top: 30px;
+}
+
+.arts-exhibition-collage {
+  display: grid;
+  grid-template-columns: minmax(0, 405fr) minmax(0, 565fr);
+  align-items: start;
+  gap: 10px;
+}
+
+.arts-exhibition-collage__visitors {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+  min-width: 0;
+}
+
+.arts-hat-gallery {
+  width: 86%;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 1000px) {
+  .arts-copy {
+    font-size: 1rem;
+  }
+
+  .arts-concert-collage,
+  .arts-exhibition-row,
+  .arts-exhibition-collage,
+  .arts-hat-gallery {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .arts-copy {
+    margin-bottom: 24px;
+    line-height: 1.65;
+  }
+
+  .arts-art-space-title {
+    margin-bottom: 24px;
+    padding-right: 18px;
+    padding-left: 18px;
+    font-size: 1rem;
+  }
+
+  .arts-concert-collage__top {
+    gap: 6px;
+    margin-bottom: 6px;
+  }
+
+  .arts-concert-collage__bottom,
+  .arts-exhibition-row,
+  .arts-exhibition-collage,
+  .arts-exhibition-collage__visitors {
+    gap: 6px;
+  }
+
+  .arts-copy--impact {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 420px) {
+  .arts-exhibition-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .arts-exhibition-collage {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .arts-exhibition-collage__poster {
+    width: 76%;
+    max-width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .arts-exhibition-collage__visitors {
+    gap: 10px;
+  }
+}

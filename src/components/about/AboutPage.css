@@ -1,0 +1,308 @@
+.about-page {
+  --about-paper: #fff5cd;
+  --about-ink: #4e364c;
+  --about-leaf: #54663d;
+  --about-purple: #8075bc;
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+  color: var(--about-ink);
+  background: var(--about-paper);
+  scrollbar-color: var(--about-leaf) var(--about-paper);
+  scrollbar-width: thin;
+}
+
+.about-page[hidden] {
+  display: none;
+}
+
+.about-stage {
+  position: sticky;
+  top: 0;
+  isolation: isolate;
+  min-block-size: 100vh;
+  overflow: hidden;
+}
+
+.about-scroll-track {
+  position: relative;
+}
+
+.about-navigation {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 0;
+}
+
+.about-forest {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.about-forest__artboard {
+  position: absolute;
+  inset: 0;
+}
+
+.about-forest__sky,
+.about-forest__layer {
+  position: absolute;
+}
+
+.about-forest__edge {
+  display: none;
+}
+
+.about-forest__sky {
+  border-radius: 50%;
+}
+
+.about-forest__ground {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.about-forest__layer {
+  display: block;
+  object-fit: fill;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  inline-size: min(68%, 54rem);
+  margin-inline: auto;
+  padding-bottom: max(3rem, env(safe-area-inset-bottom));
+}
+
+.about-hanging {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  inline-size: 100%;
+  transform-origin: 50% 0;
+}
+
+.about-hanging__sign {
+  inline-size: clamp(9rem, 16.2vw, 23rem);
+  margin: 0;
+}
+
+.about-hanging__sign > img {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+}
+
+.about-portrait {
+  inline-size: clamp(13rem, 22.3vw, 31rem);
+  max-inline-size: 100%;
+  margin: -2.3vw 0 0;
+}
+
+.about-portrait > img {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  filter: drop-shadow(2px 5px 4px rgb(78 54 76 / 0.15));
+  user-select: none;
+}
+
+.about-introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  inline-size: 100%;
+  margin-top: clamp(0.9rem, 1.8vw, 2.5rem);
+  text-align: center;
+}
+
+.about-greeting {
+  inline-size: min(100%, 31vw);
+  margin: 0 0 clamp(0.7rem, 0.8vw, 1.25rem);
+}
+
+.about-greeting > img {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  filter: brightness(0.75);
+}
+
+.about-biography {
+  inline-size: min(100%, 48ch, 40vw);
+  font-size: clamp(1rem, 1.05vw, 1.625rem);
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+.about-biography > p {
+  margin: 0;
+}
+
+.about-biography > p + p {
+  margin-top: 1em;
+}
+
+.about-resume {
+  display: grid;
+  place-items: center;
+  min-block-size: 44px;
+  inline-size: clamp(10rem, 13vw, 19rem);
+  max-inline-size: 100%;
+  margin-top: clamp(0.25rem, 0.55vw, 0.75rem);
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  color: var(--about-leaf);
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.about-resume > img {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  border-bottom: 1px solid currentColor;
+  filter: brightness(0.75);
+}
+
+.about-resume:hover {
+  background: rgb(127 151 95 / 0.1);
+}
+
+.about-resume:active {
+  background: rgb(127 151 95 / 0.2);
+}
+
+.about-back {
+  position: absolute;
+  z-index: 3;
+  top: max(1rem, env(safe-area-inset-top));
+  left: max(1rem, env(safe-area-inset-left));
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  min-block-size: 44px;
+  padding: 0.5rem 0.875rem;
+  border-radius: 4px;
+  background: var(--about-paper);
+  box-shadow: 0 3px 7px rgb(50 30 30 / 0.15);
+  color: var(--about-ink);
+  font-size: 0.875rem;
+  text-decoration: none;
+  touch-action: manipulation;
+}
+
+.about-back:hover {
+  background: #f9efcb;
+  color: #5b4d8d;
+}
+
+.about-back:focus-visible,
+.about-resume:focus-visible {
+  outline: 3px solid var(--about-purple);
+  outline-offset: 5px;
+}
+
+@media (max-width: 759px), (max-aspect-ratio: 4 / 3) {
+  .about-forest__artboard {
+    width: max(100vw, calc(100vh * 1.777778));
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+
+  .about-forest__layer[data-layer-id='58:385'] {
+    left: -4%;
+    width: 24%;
+  }
+
+  .about-forest__layer[data-layer-id='58:384'] {
+    left: 80%;
+    width: 24%;
+  }
+
+  .about-forest__ground {
+    left: 0;
+    width: 100%;
+    top: -35%;
+    height: 170%;
+  }
+
+  .about-forest__edge {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 11%;
+    height: 100%;
+  }
+
+  .about-forest__edge--left {
+    left: 0;
+  }
+
+  .about-forest__edge--right {
+    right: 0;
+  }
+
+  .about-biography {
+    inline-size: 100%;
+  }
+}
+
+@media (max-width: 759px) {
+
+  .about-content {
+    inline-size: 76%;
+    padding-bottom: 5rem;
+  }
+
+  .about-hanging__sign {
+    inline-size: clamp(9rem, 30vw, 13rem);
+  }
+
+  .about-portrait {
+    inline-size: min(100%, 55vw);
+    margin-top: -1.1rem;
+  }
+
+  .about-greeting {
+    inline-size: min(100%, 70vw);
+    margin-bottom: 1rem;
+  }
+
+  .about-introduction {
+    margin-top: 1.75rem;
+  }
+
+  .about-biography {
+    inline-size: 100%;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    line-height: 1.55;
+  }
+
+  .about-resume {
+    inline-size: clamp(10rem, 32vw, 13rem);
+    margin-top: 0.875rem;
+  }
+
+  .about-back {
+    gap: 0.3rem;
+    left: max(0.5rem, env(safe-area-inset-left));
+    padding-inline: 0.625rem;
+    font-size: 0.75rem;
+  }
+}

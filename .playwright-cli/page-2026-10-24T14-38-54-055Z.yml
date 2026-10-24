@@ -1,0 +1,19 @@
+- main [ref=e3]:
+  - region [ref=e4]:
+    - link "Back to Home" [ref=e5] [cursor=pointer]:
+      - /url: "#home"
+      - generic [ref=e8]: Home
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - heading "About me" [active] [level=1] [ref=e14]
+        - figure [ref=e15]:
+          - img "Linh Tran beside a lake, welcoming you to her forest." [ref=e16]
+      - generic [ref=e17]:
+        - heading [level=2] [ref=e18]:
+          - img "Hi, fellow traveller!" [ref=e19]
+        - generic [ref=e20]:
+          - paragraph [ref=e21]: It is I, Linh Tran, the forest’s whisperer. I am here to navigate you through this magical place which I have spent over a decade building from a single sprout of life.
+          - paragraph [ref=e22]: I very much hope you will find it worthwhile wandering here.
+        - link "View resumé (opens in a new tab)" [ref=e23] [cursor=pointer]:
+          - /url: https://drive.google.com/file/d/1JWuDqlU5EpR0llFK-OCUFfjW0kKleWaU/view?usp=sharing
+          - img "view resumé" [ref=e24]

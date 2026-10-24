@@ -1,0 +1,62 @@
+{
+  "page": "arts",
+  "before": 7941122,
+  "after": 1162554,
+  "saved": 6778568,
+  "converted": [
+    {
+      "source": "gam-hoa-art-display.webp",
+      "delivery": "gam-hoa-art-display.webp",
+      "before": 664014,
+      "after": 68696
+    },
+    {
+      "source": "gam-hoa-art-space.webp",
+      "delivery": "gam-hoa-art-space.webp",
+      "before": 578398,
+      "after": 71020
+    },
+    {
+      "source": "gam-hoa-artists.webp",
+      "delivery": "gam-hoa-artists.webp",
+      "before": 676222,
+      "after": 107800
+    },
+    {
+      "source": "gam-hoa-exhibition-poster.webp",
+      "delivery": "gam-hoa-exhibition-poster.webp",
+      "before": 1184800,
+      "after": 137804
+    },
+    {
+      "source": "gam-hoa-presentation.webp",
+      "delivery": "gam-hoa-presentation.webp",
+      "before": 501472,
+      "after": 43214
+    },
+    {
+      "source": "gam-hoa-visitors.webp",
+      "delivery": "gam-hoa-visitors.webp",
+      "before": 741392,
+      "after": 104472
+    },
+    {
+      "source": "tinh-hoa-concert-gathering.webp",
+      "delivery": "tinh-hoa-concert-gathering.webp",
+      "before": 1252972,
+      "after": 204030
+    },
+    {
+      "source": "tinh-hoa-concert-stage.webp",
+      "delivery": "tinh-hoa-concert-stage.webp",
+      "before": 1233164,
+      "after": 265278
+    },
+    {
+      "source": "tinh-hoa-concert-team.webp",
+      "delivery": "tinh-hoa-concert-team.webp",
+      "before": 1108688,
+      "after": 160240
+    }
+  ]
+}

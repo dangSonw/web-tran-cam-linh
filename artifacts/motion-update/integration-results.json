@@ -1,0 +1,231 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "about-me forest 1440",
+      "pass": true,
+      "detail": {
+        "progress": 1,
+        "opacity": 0,
+        "overflow": false,
+        "atLimit": true
+      }
+    },
+    {
+      "name": "about-me reversal 1440",
+      "pass": true
+    },
+    {
+      "name": "environment forest 1440",
+      "pass": true,
+      "detail": {
+        "progress": 0.9995,
+        "opacity": 0,
+        "overflow": false,
+        "atLimit": false
+      }
+    },
+    {
+      "name": "environment reversal 1440",
+      "pass": true
+    },
+    {
+      "name": "arts forest 1440",
+      "pass": true,
+      "detail": {
+        "progress": 0.9995,
+        "opacity": 0,
+        "overflow": false,
+        "atLimit": false
+      }
+    },
+    {
+      "name": "arts reversal 1440",
+      "pass": true
+    },
+    {
+      "name": "others forest 1440",
+      "pass": true,
+      "detail": {
+        "progress": 0.9995,
+        "opacity": 0,
+        "overflow": false,
+        "atLimit": false
+      }
+    },
+    {
+      "name": "others reversal 1440",
+      "pass": true
+    },
+    {
+      "name": "about-me forest 390",
+      "pass": true,
+      "detail": {
+        "progress": 1,
+        "opacity": 0,
+        "overflow": false,
+        "atLimit": true
+      }
+    },
+    {
+      "name": "about-me reversal 390",
+      "pass": true
+    },
+    {
+      "name": "environment forest 390",
+      "pass": true,
+      "detail": {
+        "progress": 0.9994,
+        "opacity": 0,
+        "overflow": false,
+        "atLimit": false
+      }
+    },
+    {
+      "name": "environment reversal 390",
+      "pass": true
+    },
+    {
+      "name": "arts forest 390",
+      "pass": true,
+      "detail": {
+        "progress": 0.9994,
+        "opacity": 0,
+        "overflow": false,
+        "atLimit": false
+      }
+    },
+    {
+      "name": "arts reversal 390",
+      "pass": true
+    },
+    {
+      "name": "others forest 390",
+      "pass": true,
+      "detail": {
+        "progress": 0.9994,
+        "opacity": 0,
+        "overflow": false,
+        "atLimit": false
+      }
+    },
+    {
+      "name": "others reversal 390",
+      "pass": true
+    },
+    {
+      "name": "environment gallery count",
+      "pass": true
+    },
+    {
+      "name": "gha-first-meeting-gallery moves right without controls",
+      "pass": true,
+      "detail": {
+        "before": -823.905,
+        "after": -818.207
+      }
+    },
+    {
+      "name": "gha-first-meeting-gallery hover pauses",
+      "pass": true
+    },
+    {
+      "name": "gha-first-meeting-gallery leave resumes",
+      "pass": true
+    },
+    {
+      "name": "gha-green-life-gallery moves right without controls",
+      "pass": true,
+      "detail": {
+        "before": -1649.6,
+        "after": -1644.21
+      }
+    },
+    {
+      "name": "gha-green-life-gallery hover pauses",
+      "pass": true
+    },
+    {
+      "name": "gha-green-life-gallery leave resumes",
+      "pass": true
+    },
+    {
+      "name": "gha-tet-am-ap-gallery moves right without controls",
+      "pass": true,
+      "detail": {
+        "before": -802.319,
+        "after": -796.624
+      }
+    },
+    {
+      "name": "gha-tet-am-ap-gallery hover pauses",
+      "pass": true
+    },
+    {
+      "name": "gha-tet-am-ap-gallery leave resumes",
+      "pass": true
+    },
+    {
+      "name": "gha-camp-blast-gallery moves right without controls",
+      "pass": true,
+      "detail": {
+        "before": -1236.6,
+        "after": -1230.91
+      }
+    },
+    {
+      "name": "gha-camp-blast-gallery hover pauses",
+      "pass": true
+    },
+    {
+      "name": "gha-camp-blast-gallery leave resumes",
+      "pass": true
+    },
+    {
+      "name": "environment-polygone-gallery moves right without controls",
+      "pass": true,
+      "detail": {
+        "before": -4462.9,
+        "after": -4457.21
+      }
+    },
+    {
+      "name": "environment-polygone-gallery hover pauses",
+      "pass": true
+    },
+    {
+      "name": "environment-polygone-gallery leave resumes",
+      "pass": true
+    },
+    {
+      "name": "arts gallery count",
+      "pass": true
+    },
+    {
+      "name": "arts-hat-artworks moves right without controls",
+      "pass": true,
+      "detail": {
+        "before": -1784.67,
+        "after": -1778.98
+      }
+    },
+    {
+      "name": "arts-hat-artworks hover pauses",
+      "pass": true
+    },
+    {
+      "name": "arts-hat-artworks leave resumes",
+      "pass": true
+    },
+    {
+      "name": "Reduced-motion gallery stays scrollable and static",
+      "pass": true
+    },
+    {
+      "name": "No runtime or asset errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": []
+}

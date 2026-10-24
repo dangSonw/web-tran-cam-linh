@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-23T18:22:22.9122319Z",
+  "title": "Design System: Trần Cẩm Linh Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Cream paper",
+        "canonical": "#fff5cd"
+      },
+      "purple-ink": {
+        "role": "secondary",
+        "displayName": "Purple ink",
+        "canonical": "#4e364c"
+      },
+      "leaf": {
+        "role": "primary",
+        "displayName": "Olive leaf",
+        "canonical": "#50643b"
+      },
+      "environment-ink": {
+        "role": "primary",
+        "displayName": "Environment green ink",
+        "canonical": "#4e6333"
+      },
+      "forest-green": {
+        "role": "secondary",
+        "displayName": "Forest green",
+        "canonical": "#809a5f"
+      },
+      "yellow-note": {
+        "role": "secondary",
+        "displayName": "Yellow note",
+        "canonical": "#ebe66c"
+      },
+      "yellow-strip": {
+        "role": "secondary",
+        "displayName": "Yellow strip",
+        "canonical": "#ebe26f"
+      },
+      "navigation-highlight": {
+        "role": "secondary",
+        "displayName": "Navigation highlight",
+        "canonical": "#eee789"
+      },
+      "control-hover": {
+        "role": "primary",
+        "displayName": "Control hover",
+        "canonical": "#4c6235"
+      },
+      "focus-purple": {
+        "role": "secondary",
+        "displayName": "Focus purple",
+        "canonical": "#73559e"
+      },
+      "divider": {
+        "role": "neutral",
+        "displayName": "Divider",
+        "canonical": "#d9d2b9"
+      },
+      "sky-outer": {
+        "role": "secondary",
+        "displayName": "Outer sky",
+        "canonical": "#b0e6ea"
+      },
+      "sky-middle": {
+        "role": "secondary",
+        "displayName": "Middle sky",
+        "canonical": "#c5f3f6"
+      },
+      "sky-inner": {
+        "role": "secondary",
+        "displayName": "Inner sky",
+        "canonical": "#dcfbfe"
+      },
+      "home-sky": {
+        "role": "secondary",
+        "displayName": "Home sky",
+        "canonical": "#9bcace"
+      },
+      "home-lettering": {
+        "role": "neutral",
+        "displayName": "Home lettering",
+        "canonical": "#fffbd0"
+      },
+      "curtain": {
+        "role": "secondary",
+        "displayName": "Opening curtain",
+        "canonical": "#8d203a"
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Section headline",
+        "purpose": "Shared sticky H2 paper labels; phone sizes are documented in DESIGN.md."
+      },
+      "title": {
+        "displayName": "Environment title",
+        "purpose": "Okina requested with actual McLaren fallback; original font unavailable."
+      },
+      "body": {
+        "displayName": "Portfolio body",
+        "purpose": "Shared long-page copy."
+      },
+      "environment-body": {
+        "displayName": "Environment body",
+        "purpose": "One rem text with 1.55 line height."
+      },
+      "navigation": {
+        "displayName": "Navigation",
+        "purpose": "Sticky long-page route links."
+      },
+      "gallery-label": {
+        "displayName": "Gallery label",
+        "purpose": "Gallery control and counter copy."
+      }
+    },
+    "shadows": [
+      {
+        "name": "sticky-navigation",
+        "value": "0 2px 12px rgba(78, 54, 76, 0.08)",
+        "purpose": "Shared sticky navigation backing."
+      },
+      {
+        "name": "other-title",
+        "value": "2px 3px 4px rgba(78, 54, 76, 0.14)",
+        "purpose": "Overlapping Other title strips."
+      },
+      {
+        "name": "other-certificate",
+        "value": "3px 5px 6px rgba(78, 54, 76, 0.16)",
+        "purpose": "Individual Other certificates."
+      },
+      {
+        "name": "open-paper",
+        "value": "0 4px 14px rgb(35 12 27 / 11%)",
+        "purpose": "Original Open paper layer."
+      }
+    ],
+    "motion": [
+      {
+        "name": "gallery-transition",
+        "value": "420ms; 1 - (1 - progress)^3",
+        "purpose": "RAF opacity and carousel interpolation, not a CSS keyframe."
+      },
+      {
+        "name": "gallery-interval",
+        "value": "4500ms default; 2000ms minimum",
+        "purpose": "Timeout advances the selected slide while automatic playback is permitted."
+      },
+      {
+        "name": "marquee-speed",
+        "value": "32px/s",
+        "purpose": "Measured repeating strip translated in RAF; delta capped at 0.05s."
+      },
+      {
+        "name": "achievement-hover",
+        "value": "background-color 180ms ease-out",
+        "purpose": "Local accordion hover state."
+      },
+      {
+        "name": "forest-scroll",
+        "value": "clamped native scroll; travel max(280px, available viewport height * 0.9)",
+        "purpose": "Foliage opens sideways, sign rises, copy fades; About stops at the blank source background. Reduced motion uses fades."
+      },
+      {
+        "name": "continuous-gallery-speed",
+        "value": "18px/s left to right",
+        "purpose": "Six image-only galleries; image hover pauses independently, reduced motion becomes native horizontal scrolling."
+      },
+      {
+        "name": "achievement-panel-spring",
+        "value": "stepSpring(height, target, delta, 15, 0.3)",
+        "purpose": "Interruptible panel height with matching opacity; reduced motion settles immediately."
+      },
+      {
+        "name": "cloud-breeze",
+        "value": "3px horizontal drift, 4px vertical drift, 0.55deg sway plus pointer response",
+        "purpose": "Original 2026 cutouts drift independently only while visible; focus adds the same lift as pointer interaction."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "shared-stack",
+        "value": "1000px"
+      },
+      {
+        "name": "shared-phone",
+        "value": "660px"
+      },
+      {
+        "name": "environment-stack",
+        "value": "720px"
+      },
+      {
+        "name": "other-stack",
+        "value": "760px"
+      },
+      {
+        "name": "art-exhibition-stack",
+        "value": "420px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Gallery arrow",
+      "kind": "button",
+      "refersTo": "gallery-arrow",
+      "description": "Circular 44px previous or next gallery action.",
+      "html": "<button class=\"ds-gallery-arrow\" aria-label=\"Next image\"><svg aria-hidden=\"true\" fill=\"none\" height=\"18\" width=\"18\" viewBox=\"0 0 24 24\"><path d=\"m10 5 7 7-7 7M4 12h13\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.8\"/></svg></button>",
+      "css": ".ds-gallery-arrow { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; padding: 0.45rem; border: 1px solid #72894f; border-radius: 50%; color: #fff5cd; background: #50643b; cursor: pointer; } .ds-gallery-arrow:hover, .ds-gallery-arrow:active { background: #4c6235; } .ds-gallery-arrow:focus-visible { outline: 3px solid #73559e; outline-offset: 4px; }"
+    },
+    {
+      "name": "Gallery playback",
+      "kind": "button",
+      "refersTo": "gallery-playback",
+      "description": "Existing rectangular playback control; preview represents a paused gallery.",
+      "html": "<button class=\"ds-playback\" aria-label=\"Resume automatic playback\"><svg aria-hidden=\"true\" fill=\"currentColor\" height=\"16\" width=\"16\" viewBox=\"0 0 24 24\"><path d=\"M8 4v16l12-8L8 4Z\"/></svg><span>Play</span></button>",
+      "css": ".ds-playback { display: inline-flex; align-items: center; justify-content: center; gap: 0.35rem; min-width: 44px; min-height: 44px; padding: 0.45rem 0.75rem; border: 1px solid #72894f; border-radius: 4px; color: #fff5cd; background: #50643b; font-family: McLaren, Georgia, serif; font-size: 0.8rem; cursor: pointer; } .ds-playback:hover, .ds-playback:active { background: #4c6235; } .ds-playback:focus-visible { outline: 3px solid #73559e; outline-offset: 4px; }"
+    },
+    {
+      "name": "Portfolio navigation",
+      "kind": "nav",
+      "refersTo": "navigation-link",
+      "description": "Wrapping sibling links with active paper highlight.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Portfolio navigation\"><a href=\"#home\">Home</a><a href=\"#environment\" aria-current=\"page\">Environment</a><a href=\"#arts\">Art</a><a href=\"#others\">Other</a></nav>",
+      "css": ".ds-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem; padding: 0.35rem 1rem; background: #fff5cd; box-shadow: 0 2px 12px rgba(78,54,76,0.08); font-family: McLaren, Georgia, serif; font-size: 0.9rem; } .ds-nav a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0.35rem 0.65rem; border-radius: 3px; color: #50643b; text-decoration: none; } .ds-nav a:hover, .ds-nav a[aria-current=page] { color: #4e364c; background: #eee789; } .ds-nav a:focus-visible { outline: 3px solid #73559e; outline-offset: 4px; }"
+    },
+    {
+      "name": "Achievement heading",
+      "kind": "button",
+      "refersTo": "achievement-button",
+      "description": "Existing Environment category header with source year and title.",
+      "html": "<button class=\"ds-achievement\" aria-expanded=\"true\"><span aria-hidden=\"true\">−</span><span class=\"ds-number\">1</span><span class=\"ds-year\">[2026]</span><span class=\"ds-title\">Introduction to Environmental Law and Policy</span></button>",
+      "css": ".ds-achievement { display: grid; grid-template-columns: 22px 25px auto minmax(0,1fr); align-items: center; gap: 15px; width: 100%; min-height: 55px; padding: 12px 20px; border: 0; border-radius: 0; background: #50643b; color: #ebe26f; text-align: left; font-family: McLaren, Georgia, serif; cursor: pointer; transition: background-color 180ms ease-out; } .ds-achievement:hover { background: #52663b; } .ds-achievement:focus-visible { outline: 3px solid #4e364c; outline-offset: 5px; } .ds-number { display: inline-flex; align-items: center; justify-content: center; width: 25px; height: 25px; border-radius: 50%; background: #ebe26f; color: #485d2f; font-size: 0.9375rem; } .ds-year { color: #fffef5; font-size: 0.9375rem; } .ds-title { min-width: 0; overflow-wrap: break-word; font-family: Okina, McLaren, Georgia, serif; font-size: 1.5625rem; line-height: 1.25; } @media(max-width:720px) { .ds-achievement { grid-template-columns: 22px 25px minmax(0,1fr); gap: 10px; } .ds-year, .ds-title { grid-column: 3; } }"
+    },
+    {
+      "name": "Yellow note panel",
+      "kind": "card",
+      "refersTo": "note-panel",
+      "description": "Flat source-colored Environment reading surface; sample repeats an existing title.",
+      "html": "<section class=\"ds-note\"><h4>Introduction to Environmental Law and Policy</h4><p>[2026]</p></section>",
+      "css": ".ds-note { padding: 18px 25px; color: #4e6333; background: #ebe66c; font-family: McLaren, Georgia, serif; font-size: 1rem; line-height: 1.55; } .ds-note h4 { margin: 0 0 18px; font-family: Okina, McLaren, Georgia, serif; font-size: 1.5625rem; font-weight: 400; line-height: 1.35; } .ds-note p { margin: 0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "illustrated forest portfolio",
+    "overview": "This is a descriptive label for the user's existing Figma system, not a new identity or concept. Original layered trees frame cream paper, hanging signs, purple copy and olive/yellow labels. Open introduces the separate paper wordmarks; Home offers four illustrated destinations; About, Environment, Art and Other preserve the same source world.\n\nLong pages present original projects and achievements as selectable text beside independent source images. Their adaptation changes cropping, columns and spacing to keep the content readable. The visual authority is Figma file `9yn92xRnvfIDmo0eurW1Ow`, its saved source trees and maps under `design/`, and `CONTRACT.md`. No PRODUCT.md or pre-existing DESIGN.md/sidecar was present when this system was documented.",
+    "keyCharacteristics": [
+      "Original layered forest illustrations and hanging source lettering.",
+      "Cream reading surfaces, purple copy and olive/yellow paper labels.",
+      "Selectable factual copy with independent photographs and certificates.",
+      "Native scrolling, visible keyboard focus and controlled automatic galleries."
+    ],
+    "rules": [
+      {
+        "name": "The Source Palette Rule",
+        "body": "Extend the supplied colors and illustration assets; use scoped readability corrections without substituting a new visual identity.",
+        "section": "colors"
+      },
+      {
+        "name": "The Selectable Copy Rule",
+        "body": "Keep source paragraphs, titles, years and captions in semantic DOM text; preserve original wording and punctuation.",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "Do preserve original Figma copy, independent source assets and node provenance.",
+      "Do extend shared page, section and gallery components before duplicating their behavior.",
+      "Do keep controls keyboard reachable, visibly focused and at least 44px in their shared action dimensions.",
+      "Do measure responsive geometry and cancel animation, observer and listener work on cleanup.",
+      "Do distinguish current Chrome evidence from build targets, emulation and unmeasured performance claims."
+    ],
+    "donts": [
+      "Don't replace the supplied forest system with a new palette, identity or invented product claims.",
+      "Don't flatten body paragraphs, full sections or whole pages into shipping images.",
+      "Don't substitute CSS keyframes for the required RAF motion or write React state every animation frame.",
+      "Don't invent links, fonts, awards or text corrections absent from the supplied source.",
+      "Don't treat passing automation or this system record as a final independent ship verdict; consult the current review and evidence in `artifacts/portfolio/`."
+    ]
+  }
+}

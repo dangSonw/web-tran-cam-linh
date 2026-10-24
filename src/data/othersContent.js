@@ -1,0 +1,58 @@
+export const OTHERS_INTRO = 'In this corner of the forest, you will find achievements of mine that are not yet sorted into a specific aspect of Environment or Arts. I guess you could call it some kind of secret hideout.'
+
+export const OTHER_ACHIEVEMENTS = [
+  {
+    id: 'aimo',
+    year: '2026',
+    title: 'Asia International Mathematic Olympiad',
+    titleLines: ['Asia International', 'Mathematic Olympiad'],
+    award: 'Bronze Medal',
+    description: 'National Final Round · Asia International Mathematical Olympiad 2025–2026',
+    date: '2026-05-23',
+    dateLabel: 'May 23, 2026',
+    shrub: '/images/others/shrub-dark-green.png',
+    certificate: {
+      src: '/images/others/aimo-certificate.png',
+      alt: 'Certificate of Achievement presented to Trần Cẩm Linh for a Bronze Medal in the National Final Round of the Asia International Mathematical Olympiad 2025–2026.',
+      width: 1400,
+      height: 1015,
+    },
+    source: { group: '114:395', certificate: '114:344', shrub: '114:409' },
+  },
+  {
+    id: 'hssic',
+    year: '2026',
+    title: 'High School Student Innovation Competition',
+    titleLines: ['High School Student', 'Innovation Competition'],
+    award: 'Top 15 Finalist',
+    description: 'High School Social Impact Challenge · HSSIC 2026',
+    date: '2026-06-27',
+    dateLabel: 'June 27, 2026',
+    shrub: '/images/others/shrub-pink.png',
+    certificate: {
+      src: '/images/others/hssic-certificate.png',
+      alt: 'Certificate of Recognition presented to Trần Cẩm Linh as a Top 15 Finalist in HSSIC 2026, awarded on June 27, 2026.',
+      width: 1000,
+      height: 728,
+    },
+    source: { group: '114:390', certificate: '114:364', shrub: '114:412' },
+  },
+  {
+    id: 'ipsyo',
+    year: '2026',
+    title: 'International Psychology Olympiad',
+    titleLines: ['International Psychology', 'Olympiad'],
+    award: 'Excellence',
+    description: 'International Psychology Olympiad · IPSYO 2026',
+    date: '2026-07-21',
+    dateLabel: 'July 21, 2026',
+    shrub: '/images/others/shrub-green.png',
+    certificate: {
+      src: '/images/others/ipsyo-certificate.png',
+      alt: 'Certificate of Achievement presented to Cam Linh Tran of Hanoi–Amsterdam High School for the gifted, recognizing Excellence in the 2026 International Psychology Olympiad.',
+      width: 1200,
+      height: 850,
+    },
+    source: { group: '114:389', certificate: '114:387', shrub: '114:417' },
+  },
+]

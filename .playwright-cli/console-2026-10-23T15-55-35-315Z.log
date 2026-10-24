@@ -1,0 +1,7 @@
+[     346ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=4831fdc1:15801
+[  304922ms] [ERROR] [vite] SyntaxError: The requested module '/src/data/aboutFrameLayers.js?t=1792771240197' does not provide an export named 'ABOUT_GROUND_PATHS' @ http://127.0.0.1:5173/@vite/client:367
+[  304925ms] [ERROR] [vite] Failed to reload /src/components/about/AboutPage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://127.0.0.1:5173/@vite/client:367
+[  304926ms] [ERROR] [vite] SyntaxError: The requested module '/src/data/aboutFrameLayers.js?t=1792771240197' does not provide an export named 'ABOUT_GROUND_PATHS' @ http://127.0.0.1:5173/@vite/client:367
+[  304926ms] [ERROR] [vite] Failed to reload /src/components/about/AboutForest.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://127.0.0.1:5173/@vite/client:367
+[  451002ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=4831fdc1:15801
+[  985736ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=4831fdc1:15801

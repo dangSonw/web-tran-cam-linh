@@ -1,0 +1,83 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Achievement animates between states",
+      "pass": true,
+      "detail": [
+        {
+          "moving": "true",
+          "height": 118.796875,
+          "hidden": false,
+          "expanded": false
+        },
+        {
+          "moving": "true",
+          "height": 316.34375,
+          "hidden": false,
+          "expanded": true
+        },
+        {
+          "moving": "false",
+          "height": 0,
+          "hidden": true,
+          "expanded": false
+        }
+      ]
+    },
+    {
+      "name": "Only chosen panel remains open",
+      "pass": true
+    },
+    {
+      "name": "Second achievement selected",
+      "pass": true
+    },
+    {
+      "name": "Rapid interrupted change settles correctly",
+      "pass": true
+    },
+    {
+      "name": "Achievement arrow keyboard navigation",
+      "pass": true
+    },
+    {
+      "name": "Cloud breeze moves while visible",
+      "pass": true,
+      "detail": {
+        "before": "translate3d(0.0597367px, 0.128921px, 0px) rotate(0.0177266deg)",
+        "after": "translate3d(0.734688px, 1.51292px, 0px) rotate(0.208026deg)"
+      }
+    },
+    {
+      "name": "Cloud responds to pointer",
+      "pass": true
+    },
+    {
+      "name": "Clouds pause offscreen",
+      "pass": true
+    },
+    {
+      "name": "Reduced-motion clouds static",
+      "pass": true
+    },
+    {
+      "name": "Reduced-motion achievement settles immediately",
+      "pass": true
+    },
+    {
+      "name": "Mobile panel fits viewport",
+      "pass": true
+    },
+    {
+      "name": "Mobile clouds fit viewport",
+      "pass": true
+    },
+    {
+      "name": "No runtime errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,136 @@
+.home-page {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  overflow: hidden;
+  color: #fffbd0;
+  background: #9bcace;
+}
+
+.home-page[data-active='false'] {
+  pointer-events: none;
+}
+
+/* Keep the Figma layers together; only the viewport crop changes on resize.
+   Bottom alignment keeps the meadow behind the welcome copy on wide screens. */
+.home-scene__artboard {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% + clamp(0px, (100vh - 100vw) * 0.16, 18vw));
+  width: max(100vw, calc(100vh * 1.7777778));
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  isolation: isolate;
+  background: #9bcace;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.home-scene__base,
+.home-scene__circle,
+.home-scene__layer {
+  position: absolute;
+}
+
+.home-scene__base {
+  z-index: 0;
+  inset: 0;
+  background: #9bcace;
+}
+
+.home-scene__circle {
+  border-radius: 50%;
+}
+
+.home-scene__layer {
+  display: block;
+  object-fit: fill;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Two reserved grid regions prevent signs and copy from colliding.
+   A single navigation tree preserves focus when its columns reflow. */
+.home-content {
+  position: absolute;
+  z-index: 30;
+  inset: 0;
+  display: grid;
+  grid-template-rows: minmax(0, 3fr) minmax(min-content, 2fr);
+  row-gap: clamp(0.75rem, 3vh, 1.5rem);
+  justify-items: center;
+  padding-top: max(env(safe-area-inset-top), min(4vh, 2rem));
+  padding-right: max(env(safe-area-inset-right), 3vw);
+  padding-bottom: max(env(safe-area-inset-bottom), min(3vh, 2rem));
+  padding-left: max(env(safe-area-inset-left), 3vw);
+  pointer-events: none;
+}
+
+.home-navigation {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.28fr);
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  align-self: start;
+  inline-size: min(100%, 38rem);
+  block-size: min(54vh, 30rem);
+  max-block-size: 100%;
+  gap: clamp(0.75rem, 3vh, 2rem) clamp(1rem, 5vw, 3rem);
+}
+
+.home-sign {
+  display: block;
+  min-inline-size: 0;
+  min-block-size: 0;
+  border-radius: 2px;
+  pointer-events: auto;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.home-sign__artwork {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  object-fit: contain;
+  object-position: center top;
+  transform-origin: center top;
+  transform: scale(1);
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.home-sign:focus-visible {
+  outline: 3px solid #fffbd0;
+  outline-offset: 5px;
+}
+
+.home-welcome {
+  align-self: center;
+  inline-size: min(84vw, 36ch, 46rem);
+  margin: 0;
+  color: #fffbd0;
+  font-family: 'McLaren', Georgia, serif;
+  font-size: clamp(1rem, min(0.75rem + 1.2vw, 3.4vh), 2.25rem);
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+}
+
+/* Content-driven row layout, including short landscape phones.
+   Width AND height bound the signs, so a tall/short window cannot inflate them. */
+@media (min-width: 760px) and (min-aspect-ratio: 1 / 1), (max-height: 480px) and (min-aspect-ratio: 3 / 2) {
+  .home-content {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .home-navigation {
+    grid-template-columns: minmax(0, 309fr) minmax(0, 448fr) minmax(0, 277fr) minmax(0, 358fr);
+    grid-template-rows: minmax(0, 1fr);
+    inline-size: min(90vw, 120rem);
+    block-size: min(39vh, 22vw);
+    column-gap: clamp(1rem, 5.3vw, 7rem);
+  }
+}

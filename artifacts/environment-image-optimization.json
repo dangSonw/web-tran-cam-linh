@@ -1,0 +1,260 @@
+{
+  "page": "environment",
+  "before": 31477723,
+  "after": 4854302,
+  "saved": 26623421,
+  "converted": [
+    {
+      "source": "ban-mien-clean-energy.png",
+      "delivery": "ban-mien-clean-energy.webp",
+      "before": 1053060,
+      "after": 160052
+    },
+    {
+      "source": "ban-mien-community.png",
+      "delivery": "ban-mien-community.webp",
+      "before": 1025024,
+      "after": 177438
+    },
+    {
+      "source": "ban-mien-herbs.png",
+      "delivery": "ban-mien-herbs.webp",
+      "before": 996641,
+      "after": 161424
+    },
+    {
+      "source": "ban-mien-traditional-cakes.png",
+      "delivery": "ban-mien-traditional-cakes.webp",
+      "before": 1000005,
+      "after": 131444
+    },
+    {
+      "source": "ban-mien-tree-planting.png",
+      "delivery": "ban-mien-tree-planting.webp",
+      "before": 1293124,
+      "after": 221592
+    },
+    {
+      "source": "bioremediation-research.png",
+      "delivery": "bioremediation-research.webp",
+      "before": 364594,
+      "after": 118036
+    },
+    {
+      "source": "dep-skinimalism.png",
+      "delivery": "dep-skinimalism.webp",
+      "before": 324483,
+      "after": 48860
+    },
+    {
+      "source": "dep-waterless-beauty.png",
+      "delivery": "dep-waterless-beauty.webp",
+      "before": 291925,
+      "after": 44122
+    },
+    {
+      "source": "eco-art-space-1.png",
+      "delivery": "eco-art-space-1.webp",
+      "before": 1003530,
+      "after": 114598
+    },
+    {
+      "source": "eco-art-space-2.png",
+      "delivery": "eco-art-space-2.webp",
+      "before": 954171,
+      "after": 104260
+    },
+    {
+      "source": "eco-workshop-1.png",
+      "delivery": "eco-workshop-1.webp",
+      "before": 685380,
+      "after": 82352
+    },
+    {
+      "source": "eco-workshop-2.png",
+      "delivery": "eco-workshop-2.webp",
+      "before": 597391,
+      "after": 51606
+    },
+    {
+      "source": "eco-workshop-3.png",
+      "delivery": "eco-workshop-3.webp",
+      "before": 559141,
+      "after": 41448
+    },
+    {
+      "source": "gha-camp-blast-1.png",
+      "delivery": "gha-camp-blast-1.webp",
+      "before": 894148,
+      "after": 125716
+    },
+    {
+      "source": "gha-camp-blast-2.png",
+      "delivery": "gha-camp-blast-2.webp",
+      "before": 732261,
+      "after": 75256
+    },
+    {
+      "source": "gha-camp-blast-3.png",
+      "delivery": "gha-camp-blast-3.webp",
+      "before": 882320,
+      "after": 126214
+    },
+    {
+      "source": "gha-code-of-culture.png",
+      "delivery": "gha-code-of-culture.webp",
+      "before": 958266,
+      "after": 148162
+    },
+    {
+      "source": "gha-first-meeting-1.png",
+      "delivery": "gha-first-meeting-1.webp",
+      "before": 871155,
+      "after": 95260
+    },
+    {
+      "source": "gha-first-meeting-2.png",
+      "delivery": "gha-first-meeting-2.webp",
+      "before": 864825,
+      "after": 82418
+    },
+    {
+      "source": "gha-green-life-1.png",
+      "delivery": "gha-green-life-1.webp",
+      "before": 738362,
+      "after": 88582
+    },
+    {
+      "source": "gha-green-life-2.png",
+      "delivery": "gha-green-life-2.webp",
+      "before": 777683,
+      "after": 92650
+    },
+    {
+      "source": "gha-green-life-3.png",
+      "delivery": "gha-green-life-3.webp",
+      "before": 753916,
+      "after": 80142
+    },
+    {
+      "source": "gha-green-life-4.png",
+      "delivery": "gha-green-life-4.webp",
+      "before": 892919,
+      "after": 107164
+    },
+    {
+      "source": "gha-member.png",
+      "delivery": "gha-member.webp",
+      "before": 508028,
+      "after": 68866
+    },
+    {
+      "source": "gha-tet-1.png",
+      "delivery": "gha-tet-1.webp",
+      "before": 986684,
+      "after": 148280
+    },
+    {
+      "source": "gha-tet-2.png",
+      "delivery": "gha-tet-2.webp",
+      "before": 945649,
+      "after": 114642
+    },
+    {
+      "source": "gha-vice-president.png",
+      "delivery": "gha-vice-president.webp",
+      "before": 783028,
+      "after": 73120
+    },
+    {
+      "source": "greenu-fieldwork-1.png",
+      "delivery": "greenu-fieldwork-1.webp",
+      "before": 1188717,
+      "after": 211422
+    },
+    {
+      "source": "greenu-fieldwork-2.png",
+      "delivery": "greenu-fieldwork-2.webp",
+      "before": 1097629,
+      "after": 184838
+    },
+    {
+      "source": "greenu-fieldwork-3.png",
+      "delivery": "greenu-fieldwork-3.webp",
+      "before": 1369123,
+      "after": 231866
+    },
+    {
+      "source": "greenu-recycling.png",
+      "delivery": "greenu-recycling.webp",
+      "before": 288692,
+      "after": 89494
+    },
+    {
+      "source": "ican-presentation.png",
+      "delivery": "ican-presentation.webp",
+      "before": 356521,
+      "after": 95116
+    },
+    {
+      "source": "polygone-slide-1.png",
+      "delivery": "polygone-slide-1.webp",
+      "before": 518230,
+      "after": 126242
+    },
+    {
+      "source": "polygone-slide-2.png",
+      "delivery": "polygone-slide-2.webp",
+      "before": 553517,
+      "after": 163018
+    },
+    {
+      "source": "polygone-slide-3.png",
+      "delivery": "polygone-slide-3.webp",
+      "before": 406099,
+      "after": 108738
+    },
+    {
+      "source": "polygone-slide-4.png",
+      "delivery": "polygone-slide-4.webp",
+      "before": 348158,
+      "after": 125682
+    },
+    {
+      "source": "polygone-slide-5.png",
+      "delivery": "polygone-slide-5.webp",
+      "before": 342930,
+      "after": 60444
+    },
+    {
+      "source": "wico-laboratory-1.png",
+      "delivery": "wico-laboratory-1.webp",
+      "before": 550148,
+      "after": 81380
+    },
+    {
+      "source": "wico-laboratory-2.png",
+      "delivery": "wico-laboratory-2.webp",
+      "before": 601441,
+      "after": 93028
+    },
+    {
+      "source": "wico-laboratory-3.png",
+      "delivery": "wico-laboratory-3.webp",
+      "before": 638236,
+      "after": 105850
+    },
+    {
+      "source": "wico-laboratory-4.png",
+      "delivery": "wico-laboratory-4.webp",
+      "before": 705253,
+      "after": 106700
+    },
+    {
+      "source": "wico-research-poster.png",
+      "delivery": "wico-research-poster.webp",
+      "before": 775316,
+      "after": 186780
+    }
+  ]
+}
