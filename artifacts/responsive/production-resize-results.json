@@ -1,1 +1,0 @@
-{"passed":true,"checks":{"continuousResize49Steps":true,"textAt200PercentFits":true,"highDpiHasNoCurtainLeak":true,"touchCanActivateSection":true,"allAssetsLoaded":true,"oneNavigationWithFourLinks":true,"smallToLargeAfterReturningToOpen":true},"resizeFailures":[],"consoleErrorsOrWarnings":[]}

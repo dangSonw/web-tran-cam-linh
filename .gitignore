@@ -2,3 +2,7 @@ node_modules
 video
 .codegraph
 dist
+artifacts
+.pngchunks/
+.vite-scaffold/
+.playwright-cli/
