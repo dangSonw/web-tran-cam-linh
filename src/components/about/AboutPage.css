@@ -19,8 +19,7 @@
 }
 
 .about-stage {
-  position: sticky;
-  top: 0;
+  position: relative;
   isolation: isolate;
   min-block-size: 100vh;
   overflow: hidden;
@@ -175,16 +174,7 @@
   display: block;
   inline-size: 100%;
   block-size: auto;
-  border-bottom: 1px solid currentColor;
   filter: brightness(0.75);
-}
-
-.about-resume:hover {
-  background: rgb(127 151 95 / 0.1);
-}
-
-.about-resume:active {
-  background: rgb(127 151 95 / 0.2);
 }
 
 .about-back {

@@ -2,6 +2,10 @@ import { useEffect, useRef, useState } from 'react'
 import './Gallery.css'
 
 const EMPTY_IMAGES = []
+// CSS pixels per second; previously 18. Positive values move the strip right.
+const CONTINUOUS_SPEED_PX_PER_SECOND = 23
+// One normalized wheel pixel moves the images by one CSS pixel.
+const WHEEL_SCROLL_MULTIPLIER = 1
 
 function wrap(value, length) {
   return ((value % length) + length) % length
@@ -50,7 +54,7 @@ function ContinuousGallery({ id, label, images = EMPTY_IMAGES, className = '' })
       const delta = previous ? Math.min((time - previous) / 1000, 0.05) : 0
       previous = time
       if (state.width > 0) {
-        state.offset = wrap(state.offset + delta * 18, state.width)
+        state.offset = wrap(state.offset + delta * CONTINUOUS_SPEED_PX_PER_SECOND, state.width)
         paint()
       }
       frame = window.requestAnimationFrame(animate)
@@ -86,20 +90,49 @@ function ContinuousGallery({ id, label, images = EMPTY_IMAGES, className = '' })
       updatePlayback()
     }
 
-    function isImage(target) {
-      return target instanceof Element && root.contains(target) && Boolean(target.closest('img'))
+    function isInViewport(target) {
+      // Gaps and the seam between repeated strips belong to the gallery too.
+      return target instanceof Node && viewport.contains(target)
     }
 
     function onPointerOver(event) {
       if (event.pointerType === 'touch') return
-      state.hovered = isImage(event.target)
+      state.hovered = isInViewport(event.target)
       updatePlayback()
     }
 
     function onPointerOut(event) {
       if (event.pointerType === 'touch') return
-      state.hovered = isImage(event.relatedTarget)
+      state.hovered = isInViewport(event.relatedTarget)
       updatePlayback()
+    }
+
+    function onWheel(event) {
+      // Keep browser zoom and page scrolling outside the gallery viewport native.
+      if (event.ctrlKey || event.metaKey || !event.cancelable
+        || !isInViewport(event.target) || images.length < 2) return
+
+      const horizontal = Math.abs(event.deltaX) > Math.abs(event.deltaY)
+      const rawDelta = horizontal ? event.deltaX : event.deltaY
+      const unit = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? viewport.clientWidth : 1
+      const distance = rawDelta * unit * WHEEL_SCROLL_MULTIPLIER
+      if (!distance) return
+
+      if (state.reduced) {
+        const maximum = viewport.scrollWidth - viewport.clientWidth
+        const next = Math.max(0, Math.min(maximum, viewport.scrollLeft + distance))
+        // At either end, let the visitor continue scrolling the page.
+        if (Math.abs(next - viewport.scrollLeft) < 0.5) return
+        event.preventDefault()
+        viewport.scrollLeft = next
+      } else if (state.width > 0) {
+        event.preventDefault()
+        state.hovered = true
+        updatePlayback()
+        // Vertical wheel follows autoplay; horizontal trackpads follow native panning.
+        state.offset = wrap(state.offset + (horizontal ? -distance : distance), state.width)
+        paint()
+      }
     }
 
     function onFocus() {
@@ -166,6 +199,7 @@ function ContinuousGallery({ id, label, images = EMPTY_IMAGES, className = '' })
     else preference.addListener(updatePreference)
     root.addEventListener('pointerover', onPointerOver)
     root.addEventListener('pointerout', onPointerOut)
+    viewport.addEventListener('wheel', onWheel, { passive: false })
     root.addEventListener('focusin', onFocus)
     root.addEventListener('focusout', onBlur)
     root.addEventListener('keydown', onKeyDown)
@@ -185,6 +219,7 @@ function ContinuousGallery({ id, label, images = EMPTY_IMAGES, className = '' })
       else preference.removeListener(updatePreference)
       root.removeEventListener('pointerover', onPointerOver)
       root.removeEventListener('pointerout', onPointerOut)
+      viewport.removeEventListener('wheel', onWheel)
       root.removeEventListener('focusin', onFocus)
       root.removeEventListener('focusout', onBlur)
       root.removeEventListener('keydown', onKeyDown)

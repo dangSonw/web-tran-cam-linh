@@ -126,7 +126,7 @@ export default function EnvironmentPage({ active }) {
               {depMagazine.articles.map((article) => (
                 <figure className="environment-articles__article" key={article.image.src}>
                   <SourceImage image={article.image} />
-                  <figcaption>{article.caption}</figcaption>
+                  <figcaption><a href={article.href} target="_blank" rel="noopener noreferrer">{article.caption}</a></figcaption>
                 </figure>
               ))}
             </div>

@@ -19,9 +19,11 @@ export default function OpenFrame({ onOpen, rootRef }) {
       <div className="open-page__viewport">
         <section className="open-stage" aria-label="Portfolio opening artwork">
           <CurtainBackdrop />
-          <CenterGuideLines />
-          <PaperLayer />
-          <WordmarkLayer />
+          <div className="open-stage__artwork">
+            <CenterGuideLines />
+            <PaperLayer />
+            <WordmarkLayer />
+          </div>
         </section>
       </div>
       <button className="open-page__cue" onClick={onOpen} type="button">

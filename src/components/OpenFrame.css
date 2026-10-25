@@ -48,6 +48,29 @@
   height: 100%;
 }
 
+.open-stage__artwork {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(100%, 320vw);
+  aspect-ratio: 16 / 9;
+  transform: translate(-50%, -50%);
+}
+
+/* Extend both suspension cords when a tall phone needs a smaller artwork. */
+.open-stage__artwork::before,
+.open-stage__artwork::after {
+  content: '';
+  position: absolute;
+  bottom: calc(100% - 1px);
+  width: 0.625%;
+  height: 100vh;
+  background: #4e364c;
+}
+
+.open-stage__artwork::before { left: 40.99%; }
+.open-stage__artwork::after { left: 58.44%; }
+
 .open-stage__backdrop {
   z-index: 0;
   display: block;
@@ -76,10 +99,31 @@
 .paper-card {
   position: absolute;
   transform: translate3d(0, -2.2%, 0) rotate(calc(var(--rotation) - 2deg));
-  transform-origin: center;
+  transform-origin: top left;
   background: #f9efcb;
   box-shadow: 0 4px 14px rgb(35 12 27 / 11%);
   opacity: 0;
+}
+
+/* Use the corresponding paper's bounds for centering each exported word.
+   Keep lettering above all papers so the overlapping cards never hide it. */
+.wordmark-frame {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: top left;
+}
+
+.paper-card__lettering {
+  display: block;
+  width: 88%;
+  height: 78%;
+  object-fit: contain;
+  transform: rotate(var(--rotation));
+  opacity: 0;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .open-stage__wordmarks {

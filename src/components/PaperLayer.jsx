@@ -18,7 +18,7 @@ export default function PaperLayer() {
             top: percent(paper.bounds.y, FRAME_SIZE.height),
             width: percent(paper.bounds.width, FRAME_SIZE.width),
             height: percent(paper.bounds.height, FRAME_SIZE.height),
-            '--rotation': `${paper.rotation}deg`,
+            '--rotation': `${-paper.rotation}deg`,
             zIndex: index + 1,
           }}
         />

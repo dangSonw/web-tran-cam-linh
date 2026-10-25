@@ -272,8 +272,8 @@
 .environment-timeline-paths path {
   fill: none;
   stroke: #809a5f;
-  stroke-width: 8;
-  stroke-linecap: round;
+  stroke-width: var(--timeline-stroke, 8px);
+  stroke-linecap: butt;
   stroke-linejoin: round;
 }
 
@@ -301,6 +301,42 @@
 .environment-timeline__event--right {
   grid-column: 2;
   margin-top: 110px;
+}
+
+.environment-timeline[data-layout='flow'] {
+  display: block;
+  padding: 0;
+}
+
+.environment-timeline[data-layout='flow'] .environment-timeline__event {
+  position: absolute;
+  width: 44.3%;
+  margin: 0;
+}
+
+.environment-timeline[data-layout='flow'] .environment-timeline__event--left {
+  left: 0;
+}
+
+.environment-timeline[data-layout='flow'] .environment-timeline__event--right {
+  right: 0;
+  width: 46.4%;
+}
+
+.environment-timeline[data-layout='flow'] #gha-member {
+  width: 38.25%;
+}
+
+.environment-timeline[data-layout='flow'] #gha-vice-president {
+  width: 26.8%;
+}
+
+.environment-timeline__event h4 {
+  text-align: center;
+}
+
+.environment-timeline__gallery {
+  margin: 0;
 }
 
 .environment-timeline__event h4 {
@@ -355,6 +391,11 @@
   background: var(--environment-note);
   text-align: center;
   line-height: 1.45;
+}
+
+.environment-articles figcaption a {
+  color: inherit;
+  text-decoration-thickness: 1px;
 }
 
 .environment-recycling-image {

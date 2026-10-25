@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { ABOUT_FRAME, ABOUT_PATH, ABOUT_MEADOW, ABOUT_SCENE_LAYERS } from '../../data/aboutFrameLayers'
 import { HOME_NAVIGATION } from '../../data/homeFrameLayers'
-import { PORTFOLIO_SECTIONS } from '../../data/portfolioSections'
 import useForestScroll from '../../lib/useForestScroll'
 import './PortfolioPage.css'
 
@@ -29,14 +28,15 @@ function ForestLayer({ layer, side }) {
 function ForestEntrance() {
   return (
     <div aria-hidden="true" className="portfolio-forest">
-      <div className="portfolio-forest__sky portfolio-forest__sky--outer" data-forest-rise />
-      <div className="portfolio-forest__sky portfolio-forest__sky--middle" data-forest-rise />
-      <div className="portfolio-forest__sky portfolio-forest__sky--inner" data-forest-rise />
-      <ForestLayer layer={ABOUT_MEADOW} side="left" />
-      <ForestLayer layer={ABOUT_MEADOW} side="right" />
-      <svg className="portfolio-forest__ground" data-forest-rise preserveAspectRatio="none" viewBox="0 0 1920 1080">
-        <path d={ABOUT_PATH} fill="#fff5cd" transform="translate(-1 404)" />
-      </svg>
+      <div className="portfolio-forest__landscape" data-forest-landscape>
+        <div className="portfolio-forest__sky portfolio-forest__sky--outer" />
+        <div className="portfolio-forest__sky portfolio-forest__sky--middle" />
+        <div className="portfolio-forest__sky portfolio-forest__sky--inner" />
+        <svg className="portfolio-forest__terrain" preserveAspectRatio="none" viewBox="0 0 1920 1080">
+          <use x={ABOUT_MEADOW.x} y={ABOUT_MEADOW.y} height={ABOUT_MEADOW.height} href={`${ABOUT_MEADOW.sprite}#layer-${ABOUT_MEADOW.nodeId.replace(':', '-')}`} width={ABOUT_MEADOW.width} />
+          <path d={ABOUT_PATH} fill="#fff5cd" transform="translate(-1 404)" />
+        </svg>
+      </div>
       {ABOUT_SCENE_LAYERS.map((layer) => <ForestLayer key={layer.key} layer={layer} />)}
     </div>
   )
@@ -74,7 +74,7 @@ function useInitialFocus(pageRef, active) {
   }, [active, pageRef])
 }
 
-export default function PortfolioPage({ active, section, title, intro, quote, signSrc, children }) {
+export default function PortfolioPage({ active, section, title, intro, introSrc, quote, signSrc, children }) {
   const pageRef = useRef(null)
   const homeSign = HOME_NAVIGATION.find((item) => item.key === section)
   const paragraphs = Array.isArray(intro) ? intro : String(intro || '').split(/\n\s*\n/)
@@ -98,11 +98,6 @@ export default function PortfolioPage({ active, section, title, intro, quote, si
           </svg>
           Home
         </a>
-        <div className="portfolio-nav__sections">
-          {PORTFOLIO_SECTIONS.map((item) => (
-            <a aria-current={section === item.key ? 'page' : undefined} href={item.hash} key={item.key}>{item.label}</a>
-          ))}
-        </div>
       </nav>
 
       <div className="portfolio-hero-track" data-forest-track>
@@ -121,17 +116,13 @@ export default function PortfolioPage({ active, section, title, intro, quote, si
             </blockquote>
           ) : null}
           <div className="portfolio-hero__intro" data-forest-copy>
-            {paragraphs.filter(Boolean).map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+            {introSrc ? <img alt={intro} src={introSrc} /> : paragraphs.filter(Boolean).map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
           </div>
         </div>
       </header>
       </div>
 
       <div className="portfolio-body">{children}</div>
-      <footer className="portfolio-footer">
-        <a href="#home">Back to the forest</a>
-        <a href="#about-me">About Linh</a>
-      </footer>
     </section>
   )
 }

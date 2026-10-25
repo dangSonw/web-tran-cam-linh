@@ -95,8 +95,17 @@ function AchievementImages({ achievement }) {
 }
 
 export default function EnvironmentAchievements() {
-  const [expandedId, setExpandedId] = useState(environmentAchievements[0].id)
+  const [expandedIds, setExpandedIds] = useState(() => new Set([environmentAchievements[0].id]))
   const buttonRefs = useRef([])
+
+  function toggleAchievement(id) {
+    setExpandedIds((current) => {
+      const next = new Set(current)
+      if (next.has(id)) next.delete(id)
+      else next.add(id)
+      return next
+    })
+  }
 
   function handleKeyDown(event, index) {
     let nextIndex = index
@@ -120,7 +129,7 @@ export default function EnvironmentAchievements() {
   return (
     <div className="environment-achievements" data-environment-accordion>
       {environmentAchievements.map((achievement, index) => {
-        const expanded = expandedId === achievement.id
+        const expanded = expandedIds.has(achievement.id)
         const buttonId = `environment-achievement-button-${achievement.id}`
         const panelId = `environment-achievement-panel-${achievement.id}`
 
@@ -134,7 +143,7 @@ export default function EnvironmentAchievements() {
                 aria-expanded={expanded}
                 aria-controls={panelId}
                 ref={(node) => { buttonRefs.current[index] = node }}
-                onClick={() => setExpandedId(achievement.id)}
+                onClick={() => toggleAchievement(achievement.id)}
                 onKeyDown={(event) => handleKeyDown(event, index)}
               >
                 <svg className="environment-achievement__toggle" viewBox="0 0 24 24" aria-hidden="true">

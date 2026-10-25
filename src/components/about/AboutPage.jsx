@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { ABOUT_CONTENT } from '../../data/aboutFrameLayers'
 import AboutForest from './AboutForest'
-import useAboutMotion from './useAboutMotion'
 import './AboutPage.css'
 
 function AboutPortrait() {
@@ -51,8 +50,6 @@ function AboutIntroduction() {
 export default function AboutPage({ active }) {
   const pageRef = useRef(null)
 
-  useAboutMotion(pageRef, active)
-
   useEffect(() => {
     if (active) {
       pageRef.current.scrollTop = 0
@@ -77,8 +74,8 @@ export default function AboutPage({ active }) {
           <span>Home</span>
         </a>
       </div>
-      <div className="about-scroll-track" data-forest-track>
-        <div className="about-stage" data-forest-scene>
+      <div className="about-scroll-track">
+        <div className="about-stage">
           <AboutForest />
           <div className="about-content">
             <AboutPortrait />

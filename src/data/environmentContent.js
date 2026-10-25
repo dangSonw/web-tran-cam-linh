@@ -110,7 +110,7 @@ export const environmentAchievements = [
 export const banMien = {
   "id": "ban-mien",
   "title": "Ban Mien - Ba Vi",
-  "description": "During a community trip to Ban Mien, Ba Vi, I participated in a multifaceted sustainability and health initiative. Working alongside local residents, my peers and I explored traditional herbal medicine, studied their uses, and gained hands-on experience in the production and packaging process of those herbs.\n\nAdditionally, I contributed to environmental restoration by planting trees and installing solar panels to provide reliable, clean energy access for the local community. Under the guidance of the commune’s residents, we were also involved in the production of a traditional cake - ‘Bánh Giò’.\n\nThis immersive experience thoroughly deepened my understanding of the intersection of cultural heritage and sustainable development.",
+  "description": "During a community trip to Ban Mien, Ba Vi, I participated in a multifaceted sustainability and health initiative. Working alongside local residents, my peers and I explored traditional herbal medicine, studied their uses, and gained hands-on experience in the production and packaging process of those herbs.\n\nAdditionally, I contributed to environmental restoration by planting trees and installing solar panels to provide reliable, clean energy access for the local community. Under the guidance of the commune’s residents, we were also involved in the production of a traditional cake - ‘Banh Gio’.\n\nThis immersive experience thoroughly deepened my understanding of the intersection of cultural heritage and sustainable development.",
   "images": [
     {
       "src": "/images/environment/ban-mien-herbs.webp",
@@ -155,7 +155,7 @@ export const ecoWander = {
   "title": "ECO WANDER",
   "intro": "June 2026 marks the beginning of my journey as Head Organizer of Eco Wander Season 4 - Glass Recycling where I hosted two main events: Recycled Glass Art Workshop and “Viet Nam Gam Hoa” Art Space.",
   "workshopTitle": "Recycled Glass Art Workshop",
-  "workshopDescription": "On the 18th of July, 2026, inspired by the theme Vietnam: A Tapestry of Colors (Việt Nam Gấm Hoa), this initiative invited participants to create distinctive paintings that celebrated the cultural beauty of Vietnam. By incorporating glass pieces into the medium, the project delivered a dynamic visual style that guaranteed artistic individuality across all works.",
+  "workshopDescription": "On the 18th of July, 2026, inspired by the theme Vietnam: A Tapestry of Colors (Viet Nam Gam Hoa), this initiative invited participants to create distinctive paintings that celebrated the cultural beauty of Vietnam. By incorporating glass pieces into the medium, the project delivered a dynamic visual style that guaranteed artistic individuality across all works.",
   "workshopImages": [
     {
       "src": "/images/environment/eco-workshop-1.webp",
@@ -198,7 +198,7 @@ export const ecoWander = {
     }
   ],
   "impactTitle": "Community Impact",
-  "impactDescription": "Simultaneously, we raised nearly 6 million VND from selling our glass painting collection for two initiatives organized by MSD Vietnam - “Trang Mới Cuộc Đời” and “Trường Học Hạnh Phúc”."
+  "impactDescription": "Simultaneously, we raised nearly 6 million VND from selling our glass painting collection for two initiatives organized by MSD Vietnam - “Trang Moi Cuoc Doi” and “Truong Hoc Hanh Phuc”."
 }
 
 export const greenHanoiAmsterdam = {
@@ -206,7 +206,7 @@ export const greenHanoiAmsterdam = {
   "title": "Green Hanoi Amsterdam",
   "intro": [
     "Hanoi - Amsterdam High School for the Gifted’s biggest Environmental and Social Club.\n‘GHA does not choose the best, but the most fitting.’",
-    "On the 18th of July, 2026, inspired by the theme Vietnam: A Tapestry of Colors (Việt Nam Gấm Hoa), this initiative invited participants to create distinctive paintings that celebrated the cultural beauty of Vietnam. By incorporating glass pieces into the medium, the project delivered a dynamic visual style that guaranteed artistic individuality across all works."
+    "On the 18th of July, 2026, inspired by the theme Vietnam: A Tapestry of Colors (Viet Nam Gam Hoa), this initiative invited participants to create distinctive paintings that celebrated the cultural beauty of Vietnam. By incorporating glass pieces into the medium, the project delivered a dynamic visual style that guaranteed artistic individuality across all works."
   ],
   "timeline": [
     {
@@ -309,7 +309,7 @@ export const greenHanoiAmsterdam = {
     {
       "id": "gha-tet-am-ap",
       "title": "Tet Am Ap 2026",
-      "description": "Approaching the Lunar New Year, we got into the holiday spirit by hosting a cooking night where the entire club made over 100 traditional cakes - ‘Bánh Chưng’ which we donated to the underprivileged of Hanoi the following day.",
+      "description": "Approaching the Lunar New Year, we got into the holiday spirit by hosting a cooking night where the entire club made over 100 traditional cakes - ‘Banh Chung’ which we donated to the underprivileged of Hanoi the following day.",
       "side": "right",
       "fade": "2",
       "images": [
@@ -433,6 +433,7 @@ export const depMagazine = {
         "height": 293,
         "sourceNodeId": "112:17"
       },
+      "href": "https://dep.com.vn/my-pham-giam-nuoc-xu-huong-hay-tuong-lai-cua-nganh-lam-dep/",
       "caption": "‘Waterless Beauty: A passing trend or the Future of Beauty?’ online article"
     },
     {
@@ -443,6 +444,7 @@ export const depMagazine = {
         "height": 293,
         "sourceNodeId": "112:26"
       },
+      "href": "https://dep.com.vn/skinimalism-cham-da-toi-gian-hieu-qua-toi-da/",
       "caption": "‘Skinimalism: Minimal skincare, Maximum results’ online article"
     }
   ]
